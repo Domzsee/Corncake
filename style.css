@@ -1,0 +1,121 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #fff8e1, #ffe082);
+  color: #333;
+}
+
+header {
+  background-color: #ffb300;
+  padding: 20px 40px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-title img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%; /* circular logo */
+  border: 3px solid #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.logo-title h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+/* OUR STORY SECTION */
+.intro {
+  display: flex;
+  justify-content: space-between;   /* text left, images right */
+  align-items: flex-start;
+  padding: 60px 20px;
+  gap: 200px;                        /* smaller gap so text reaches closer */
+  width: 100%;                      /* full width */
+  margin: 0;
+}
+
+.intro-text {
+  flex: 2;                          /* ✅ give text more space */
+  max-width: none;                   /* ✅ remove width cap */
+  text-align: left;
+}
+
+.intro-text h2 {
+  font-size: 2.4em;
+  margin-bottom: 25px;
+  color: #d17f00;
+  text-align: left;
+}
+
+.intro-text p {
+  font-size: 1.5em;
+  line-height: 1.8;
+  text-align: left;
+  background: #fff3e0;
+  padding: 40px 60px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  width: 100%;                      /* ✅ stretch across text column */
+}
+
+/* PICTURES DESIGN - staggered circles on right */
+.intro-image {
+  flex: 1;                          /* ✅ smaller column for images */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.intro-image img {
+  width: 310px;                     /* bigger circles */
+  height: 310px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* stagger effect: second image shifted right */
+.intro-image img:nth-child(2) {
+  margin-left: 200px;
+}
+
+.intro-image img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+}
+
+.extra-image {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.extra-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+footer {
+  background-color: #ffb300;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  color: #000000;
+  font-weight: bold;
+}
